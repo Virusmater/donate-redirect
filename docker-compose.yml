@@ -1,0 +1,12 @@
+version: '3'
+services:
+  donate-redirect:
+    restart: always
+    environment:
+      - FLASK_ENV=development
+      - MODULE_NAME=src.main
+      - VARIABLE_NAME=application
+      - APP_URL=localhost
+    build: .
+    ports:
+      - "80:5000"
