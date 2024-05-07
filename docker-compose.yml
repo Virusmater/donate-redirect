@@ -11,4 +11,4 @@ services:
       - BASIC_AUTH_PASSWORD=change_me
     build: .
     ports:
-      - "80:5000"
+      - "5000:5000"
